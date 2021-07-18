@@ -12,6 +12,7 @@ The main MCU is CH549F, which has a lot of advantages.
 
 # Firmware
 The firmware is extract from MounRiver Studio.
+Meanwhile there are two newer versions beside 1.2 available.  
 
 # Screenshot
 MDK-ARM
