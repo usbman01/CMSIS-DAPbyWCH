@@ -12,7 +12,18 @@ The main MCU is CH549F, which has a lot of advantages.
 
 # Firmware
 The firmware is extract from MounRiver Studio.
-Meanwhile there are two newer versions beside 1.2 available.  
+
+Meanwhile there are two newer versions beside 1.2 available.<br>
+The firmware contains 2 parts:
+- bootloader (0x000-0x0CFF) which follows WCHs IAP protocoll
+- DAP device implementing SWD protocoll only
+The firmware seems derived from ARMs DAP firmare 
+
+https://github.com/ARMmbed/DAPLink
+
+The Protocol desriptoin is here 
+
+https://arm-software.github.io/CMSIS_5/DAP/html/index.html
 
 # Screenshot
 MDK-ARM
