@@ -26,6 +26,7 @@ The firmware seems derived from ARMs DAP firmare but in a very inefficent way. A
 - lots of nitialized vars on file level (init_table is about 700 Bytes)
 - lot of memcpy usage a perfect candidate for use of that 0xA5 mnemonic for specialized memcpy & memset
 - strange calculation of the default bautrate using ldiv
+- 
 Here a link to the ARM sources
 https://github.com/ARMmbed/DAPLink
 
