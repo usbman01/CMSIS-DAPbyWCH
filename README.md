@@ -25,14 +25,16 @@ The firmware seems derived from ARMs DAP firmare but in a very inefficent way. A
 - const arrays resist in XRAM instead of ROM
 - lots of nitialized vars on file level (init_table is about 700 Bytes)
 - lot of memcpy usage a perfect candidate for use of that 0xA5 mnemonic for specialized memcpy & memset
-- strange calculation of the default bautrate using ldiv
-- 
+- strange calculation of the default baudrate using ldiv
+ 
 Here a link to the ARM sources
 https://github.com/ARMmbed/DAPLink
 
 The protocol desription for DAP 2.0 can be found here: 
 
 https://arm-software.github.io/CMSIS_5/DAP/html/index.html
+
+maybe that firmware can be optimized to fit even in a ch552
 
 # Screenshot
 MDK-ARM
