@@ -15,7 +15,7 @@ The firmware is extract from MounRiver Studio.
 
 Meanwhile there are two newer versions beside 1.2 available.<br>
 The firmware contains 2 parts:
-- bootloader (0x000-0x0CFF) which follows WCHs IAP protocoll. The loader in V1.2 divers from the other versions
+- bootloader (0x000-0x0CFF) which follows WCHs IAP protocoll. The loader in V1.2 difers from the other versions
 - DAP device implementing SWD protocoll only
 - 
 The firmware seems derived from ARMs DAP firmare but in a very inefficent way. A few examples:
