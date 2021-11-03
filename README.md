@@ -13,7 +13,7 @@ The main MCU is CH549F, which has a lot of advantages.
 # Firmware
 The firmware is extract from MounRiver Studio.
 
-Meanwhile there are two newer versions beside 1.2 available.<br>
+Meanwhile there are some newer versions beside 1.2 available.<br>
 The firmware contains 2 parts:
 - bootloader (0x000-0x0CFF) which follows WCHs IAP protocoll. The loader in V1.2 difers from the other versions
 - DAP device implementing SWD protocoll only
@@ -23,9 +23,10 @@ The firmware seems derived from ARMs DAP firmare but in a very inefficent way. A
 - conversion msbfirst to lsbfirst, make someting like htonl() would improve that
 - the code uses the large memory model
 - const arrays resist in XRAM instead of ROM
-- lots of nitialized vars on file level (init_table is about 700 Bytes)
+- lots of initialized vars on file level (init_table is about 700 Bytes)
 - lot of memcpy usage a perfect candidate for use of that 0xA5 mnemonic for specialized memcpy & memset
 - strange calculation of the default baudrate using ldiv
+- buggy usb descriptors for VCP in vendor mode
  
 Here a link to the ARM sources
 https://github.com/ARMmbed/DAPLink
